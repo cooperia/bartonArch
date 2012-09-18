@@ -59,6 +59,8 @@ p {
 
 /* End Zeroing */
 
+/*General Stuff*/
+
 #wrapper {
 	width:100%;
 	padding:1em;
@@ -70,40 +72,16 @@ box {
 	box-sizing: border-box;
 }
 
-
-div#headWrapper {
-	margin:0em auto 1em auto;
-	width:98em;
-	vertical-align:baseline;
-}
-
-
-h1#name {
-	font-size:2.4em;
-	font-weight:bold;
-	display:inline;
-	margin-left:1.5%;
-}
-
-h2#subtitles {
-	font-size:1.8em;
-	font-weight:bold;
-	display:inline;
-	margin-left:1em;
-}
-
 .tanText {
 	color:#A29B85;
 }
 
-.uppercase {
-	text-transform:uppercase;
+.whiteText {
+	color:#ffffff;
 }
 
-
-div#navBar {
-	max-width:96em;
-	min-width:60em;
+.uppercase {
+	text-transform:uppercase;
 }
 
 .black {
@@ -119,13 +97,44 @@ div#navBar {
 	height:2.1em;
 }
 
-.imgBar.black {
+.imgBar.leftBar {
 	margin-right:.5%;
 }
 
-.imgBar.tan {
+.imgBar.rightBar {
 	margin-left:.5%;
 }
+
+/*Headline*/
+
+div#headWrapper {
+	margin:0em auto 1em auto;
+	width:98em;
+	vertical-align:baseline;
+}
+
+h1#name {
+	font-size:2.4em;
+	font-weight:bold;
+	display:inline;
+	margin-left:1.5%;
+}
+
+h2#subtitles {
+	font-size:1.8em;
+	font-weight:bold;
+	display:inline;
+	margin-left:1em;
+}
+
+/*Nav*/
+
+
+div#navBar {
+	max-width:96em;
+	min-width:60em;
+}
+
 
 .header {
 	width:39%;
@@ -181,10 +190,11 @@ a.rightLink {
 }
 
 li.black a {
-	color:#A29B85;
 	font-weight:bold;
 	font-size:1.2em;
 }
+
+/*Body*/
 
 #bodyWrapper {
 	max-width:98em;
@@ -196,7 +206,7 @@ li.black a {
 	float:left;
 	width:78%;
 	line-height:1em;
-	margin:1em 0em 0em 1.5%;
+	margin:1em 0em 1em 1.5%;
 }
 
 #rightNav {
@@ -206,6 +216,27 @@ li.black a {
 	background:#666666;
 }
 
+#textWrap {
+	float:left;
+	width:50%;
+}
+
+
+/* Resources */
+
+#resourceWrapper {
+	clear:both;
+}
+
+.resourceButton {
+	line-height:1em;
+	clear:left;
+}
+
+.resourceButton ul li {
+	float:left;
+	margin-bottom:.25em;
+}
 
 
 

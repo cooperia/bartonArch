@@ -4,7 +4,7 @@
     <title>bartonarch</title>
 	<meta charset="UTF-8" />
 	<link media="screen" type="text/css" rel="stylesheet" href="styleNew.main.css" />
-	<script type="text/javascript" src="sites/default/files/javascript/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="javascript/jquery-1.7.1.js"></script>
 	
 	<!-- enable HTML5 elements in IE7+8 -->
 	<!-- [if lt IE 9]>
@@ -21,11 +21,11 @@
 		</div>
 		<div id="navWrapper">
 			<ul>
-				<li class="black imgBar">
+				<li class="black imgBar leftBar">
 				</li>
-				<li class="black header box" id="test">
-					<a href="" class="leftLink upLink">Bio</a>
-					<a href="" class="rightLink upLink">Philo</a>
+				<li class="black header box">
+					<a href="" class="leftLink upLink tanText">Bio</a>
+					<a href="" class="rightLink upLink tanText">Philo</a>
 				</li>
 				<li class="tan header box">
 					<a href="" class="leftLink downLink">church.barton@gmail.com</a>
@@ -34,7 +34,7 @@
 				<li id="projItem" class="box">
 					<div id="projWrapper" class="uppercase tanText">
 						<ul>
-							<li class="imgBar tan">
+							<li class="imgBar tan leftBar">
 							</li>
 							<li>P</li>
 							<li>R</li>
@@ -46,26 +46,57 @@
 							<li>S</li>
 						</ul>
 				</li>
-				<li class="imgBar tan">
+				<li class="imgBar tan rightBar">
 				</li>
 			</ul>
 		</div>
 		<div id="bodyWrapper" class="box">
 			<div id="contentWrapper">
-				Main Content Area<br/>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et elit ligula, sed placerat elit. Cras dignissim justo leo, et pretium enim. Sed nisl mi, suscipit et vestibulum sit amet, rutrum convallis neque. Aenean suscipit aliquet urna, eget cursus lacus placerat ut. Cras tincidunt laoreet enim ut sagittis. Nam eu mollis tortor. Fusce ullamcorper eros vitae nisl pulvinar pulvinar. Duis feugiat tempus ante sed consectetur. Proin arcu turpis, sagittis ac volutpat eget, ornare eu erat. Morbi metus massa, viverra sit amet dapibus a, mattis vel justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at blandit lectus. Nullam eget fermentum tortor. Curabitur vel consectetur neque. Praesent et erat quis tellus dictum malesuada.
+				<div id="textWrap">
+					Main Content Area<br/>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et elit ligula, sed placerat elit. Cras dignissim justo leo, et pretium enim. Sed nisl mi, suscipit et vestibulum sit amet, rutrum convallis neque. Aenean suscipit aliquet urna, eget cursus lacus placerat ut. Cras tincidunt laoreet enim ut sagittis. Nam eu mollis tortor. Fusce ullamcorper eros vitae nisl pulvinar pulvinar. Duis feugiat tempus ante sed consectetur. Proin arcu turpis, sagittis ac volutpat eget, ornare eu erat. Morbi metus massa, viverra sit amet dapibus a, mattis vel justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at blandit lectus. Nullam eget fermentum tortor. Curabitur vel consectetur neque. Praesent et erat quis tellus dictum malesuada.
 
-				Vestibulum ac mi metus. Duis eu luctus metus. Quisque vitae tempus lorem. Nam nulla nibh, pharetra quis suscipit ac, viverra ac libero. Cras at sem eros. Suspendisse faucibus tristique pharetra. Nulla adipiscing eros quis orci scelerisque nec venenatis urna pretium. Nunc odio libero, rhoncus id ornare quis, lacinia et erat. Aenean iaculis justo non lorem rutrum lobortis. Nunc vel mi orci. Nullam non tempor lorem. Integer sapien purus, auctor ac rutrum eget, elementum sit amet diam. Praesent dapibus, purus vitae congue porta, arcu massa vestibulum metus, vel cursus nunc dui sit amet lacus. Nullam ac velit in nunc mattis mollis in sit amet dolor. Donec interdum facilisis nisl, blandit consectetur nulla viverra et.
+					Vestibulum ac mi metus. Duis eu luctus metus. Quisque vitae tempus lorem. Nam nulla nibh, pharetra quis suscipit ac, viverra ac libero. Cras at sem eros. Suspendisse faucibus tristique pharetra. Nulla adipiscing eros quis orci scelerisque nec venenatis urna pretium. Nunc odio libero, rhoncus id ornare quis, lacinia et erat. Aenean iaculis justo non lorem rutrum lobortis. Nunc vel mi orci. Nullam non tempor lorem. Integer sapien purus, auctor ac rutrum eget, elementum sit amet diam. Praesent dapibus, purus vitae congue porta, arcu massa vestibulum metus, vel cursus nunc dui sit amet lacus. Nullam ac velit in nunc mattis mollis in sit amet dolor. Donec interdum facilisis nisl, blandit consectetur nulla viverra et.
 
-				Quisque tristique metus cursus sapien lacinia iaculis. Integer eget ipsum tellus, vel interdum augue. Phasellus turpis nunc, luctus vel pretium a, posuere in mi. Etiam in orci est, quis facilisis mi. Duis non lacus eget arcu luctus hendrerit. Nullam accumsan euismod tortor ac molestie. Suspendisse vel diam convallis augue euismod dapibus. Nulla dapibus elementum ornare.
+					Quisque tristique metus cursus sapien lacinia iaculis. Integer eget ipsum tellus, vel interdum augue. Phasellus turpis nunc, luctus vel pretium a, posuere in mi. Etiam in orci est, quis facilisis mi. Duis non lacus eget arcu luctus hendrerit. Nullam accumsan euismod tortor ac molestie. Suspendisse vel diam convallis augue euismod dapibus. Nulla dapibus elementum ornare.
+				</div>
+				
 			</div>
 			<div id="rightNav">
 				NAV!
 			</div>
 		</div>
+		<div id="resourceWrapper">
+			<div class="resourceButton" id="resume">
+				<ul>
+					<li class="tan imgBar leftBar">
+					</li>
+					<li class="tan header box" >
+						<a href="" class="leftLink upLink">Resume</a>
+					</li>
+				</ul>
+			</div>
+			<div class="resourceButton" id="printPorfolio">
+				<ul>
+					<li class="tan imgBar leftBar">
+					</li>
+					<li class="tan header box" >
+						<a href="" class="leftLink upLink">Print Portfolio</a>
+					</li>
+				</ul>
+			</div>
+			<div class="resourceButton" id="digitalPortolio">
+				<ul>
+					<li class="tan imgBar leftBar">
+					</li>
+					<li class="tan header box" >
+						<a href="" class="leftLink upLink">Digital Porfolio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		
-		
-    	<script type="text/javascript" src="javascript/javascript.js?r=1"></script>
+    	<script type="text/javascript" src="javascript/animations.js?r=1"></script>
 	</div>
   </body>
 </html>
