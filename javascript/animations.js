@@ -1,8 +1,8 @@
 $(function() {
 	$(".resourceButton").mouseover(function(){
-		$('ul li.imgBar',this).addClass("black").removeClass("tan");
+		$(this).addClass("blackLeft").removeClass("tanLeft");
 	}).mouseout(function(){
-		$('ul li.imgBar',this).addClass("tan").removeClass("black");
+		$(this).addClass("tanLeft").removeClass("blackLeft");
 	});
 	
 	$(".upLink").mouseover(function(){

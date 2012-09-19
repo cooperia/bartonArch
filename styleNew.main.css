@@ -66,7 +66,11 @@ p {
 	padding:1em;
 }
 
-box {
+.clear {
+	clear:both;
+}
+
+.box {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -92,17 +96,20 @@ box {
 	background:#A29B85;
 }
 
-.imgBar {
-	width:1%;
-	height:2.1em;
+.tanLeft {
+	border-left:1em solid #A29B85;
 }
 
-.imgBar.leftBar {
-	margin-right:.5%;
+.tanRight {
+	border-right:1em solid #A29B85;
 }
 
-.imgBar.rightBar {
-	margin-left:.5%;
+.blackLeft {
+	border-left:1em solid #000000;
+}
+
+.blackRight {
+	border-right:1em solid #000000;
 }
 
 /*Headline*/
@@ -137,7 +144,7 @@ div#navBar {
 
 
 .header {
-	width:39%;
+	width:40%;
 	height:100%;
 	padding: .5em 0em;
 }
@@ -145,15 +152,24 @@ div#navBar {
 #projItem {
 	width:19%;
 	height:100%;
+	border-left:1em solid #A29B85;
+	margin-left:.25em;
+	vertical-align:middle;
 }
-
+/*
+#projWrapper {
+	border-left:1em solid #A29B85;
+	margin-left:.25em;
+}
+*/
 #projWrapper ul li {
 	float:left;
 	margin-left:1.25%;
 	width:10%;
 	font-size:1.8em;
 	font-weight:bold;
-	margin-top:.25em;
+	line-height:1em;
+	margin-top:.2em;
 }
 
 #projWrapper ul li.imgBar {
@@ -167,13 +183,20 @@ div#navBar {
 	min-width:62em;
 	margin:0em auto;
 	line-height:1em;
+	overflow: hidden;
+	border-left:1em solid #000000;
+	border-right:1em solid #A29B85;
+}
+#navWrapper ul {
+	margin-left:.25em;
 }
 
 #navWrapper ul li {
 	float:left;
+	display:block;
 }
 
-li.tan a {
+.tan a {
 	color:#000000;
 	font-size:1.2em;
 }
@@ -207,13 +230,15 @@ li.black a {
 	width:78%;
 	line-height:1em;
 	margin:1em 0em 1em 1.5%;
+	font-family:helvetica, arial, sans-serif;
+	font-size:1.2em;
+	line-height:1.5em;
 }
 
 #rightNav {
 	float:right;
 	width:18%;
 	margin-top:1em;
-	background:#666666;
 }
 
 #textWrap {
@@ -226,16 +251,65 @@ li.black a {
 
 #resourceWrapper {
 	clear:both;
+	max-width:96em;
+	min-width:60em;
+	margin: 0 auto;
 }
 
 .resourceButton {
 	line-height:1em;
 	clear:left;
+	margin-bottom:.25em;
 }
 
-.resourceButton ul li {
-	float:left;
+.resourceButton div {
+	margin-left:.25em;
+}
+
+
+/*Right Nav */
+
+.rightNavBtn {
+	border-right:1em solid #000000;
 	margin-bottom:.25em;
+}
+
+.navImage {
+	border:.1em solid #000000;
+	float:right;
+	margin-right:.25em;
+}
+
+#imgLLC, #LLC{
+	border-color:#9d0000;
+}
+
+#MUNE, #imgMUNE {
+	border-color:#35333e;
+}
+
+#KIN, #imgKIN {
+	border-color:#565d55;
+}
+
+#HAUS, #imgHAUS {
+	border-color:#bd812b;
+}
+
+#TERM, #imgTERM {
+	border-color:#898989;
+}
+
+#WSU, #imgWSU {
+	border-color:#452c14;
+}
+
+#VFS, #imgVFS {
+	border-color:#578cc0;
+}
+
+#PCI, #imgPCI {
+	border-color:#a8b9b9;
 }
 
 
