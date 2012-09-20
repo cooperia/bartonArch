@@ -84,6 +84,10 @@ p {
 	color:#ffffff;
 }
 
+.blackText {
+	color:#000000;
+}
+
 .uppercase {
 	text-transform:uppercase;
 }
@@ -197,7 +201,6 @@ div#navBar {
 }
 
 .tan a {
-	color:#000000;
 	font-size:1.2em;
 }
 
@@ -229,7 +232,7 @@ li.black a {
 	float:left;
 	width:78%;
 	line-height:1em;
-	margin:1em 0em 1em 1.5%;
+	margin:1em 0em 1em;
 	font-family:helvetica, arial, sans-serif;
 	font-size:1.2em;
 	line-height:1.5em;
@@ -237,7 +240,7 @@ li.black a {
 
 #rightNav {
 	float:right;
-	width:18%;
+	width:20.3%;
 	margin-top:1em;
 }
 
@@ -269,48 +272,129 @@ li.black a {
 
 /*Right Nav */
 
+
 .rightNavBtn {
 	border-right:1em solid #000000;
 	margin-bottom:.25em;
 }
 
-.navImage {
+.rightNavBtn.hover, .miniButton {
+	border-left:1em solid #000000;
+}
+
+.navImage, .child {
 	border:.1em solid #000000;
 	float:right;
 	margin-right:.25em;
+	width:5.5em;
+	line-height:1em;
 }
 
-#imgLLC, #LLC{
+div.fullBox {
+	color:#ffffff !important;
+}
+
+div.hidden {
+	display:none;
+}
+
+/*This is ugly... Avert your gaze*/
+
+#imgLLC, #LLC, #LLC .child{
 	border-color:#9d0000;
+	color:#9d0000;
 }
 
-#MUNE, #imgMUNE {
+#imgLLC .fullBox{
+	background:#9d0000;
+}
+
+#MUNE, #imgMUNE, #MUNE .child {
 	border-color:#35333e;
+	color:#35333e;
+}
+#MUNE .fullBox {
+	background:#35333e;
 }
 
-#KIN, #imgKIN {
+#KIN, #imgKIN, #KIN .child {
 	border-color:#565d55;
+	color:#565d55;
+}
+#KIN .fullBox {
+	background:#565d55;
 }
 
-#HAUS, #imgHAUS {
+#HAUS, #imgHAUS, #HAUS .child {
 	border-color:#bd812b;
+	color:#bd812b;
+}
+#HAUS .fullBox {
+	background:#bd812b;
 }
 
-#TERM, #imgTERM {
+#TERM, #imgTERM, #TERM .child {
 	border-color:#898989;
+	color:#898989;
+}
+#TERM .fullBox {
+	background:#898989;
 }
 
-#WSU, #imgWSU {
+#WSU, #imgWSU, #WSU .child {
 	border-color:#452c14;
+	color:#452c14;
 }
 
-#VFS, #imgVFS {
+#WSU .fullBox {
+	background:#452c14;
+}
+
+#VFS, #imgVFS, #VFS .child {
 	border-color:#578cc0;
+	color:#578cc0;
 }
 
-#PCI, #imgPCI {
-	border-color:#a8b9b9;
+#VFS .fullBox {
+	background:#578cc0;
 }
+
+#PCI div.rightNavBtn, #imgPCI, #PCI .child, #PCI .miniButton {
+	border-color:#a8b9b9;
+	color:#a8b9b9;
+}
+
+#PCI .fullBox {
+	background:#a8b9b9;
+}
+
+#ENC, #imgENC, #ENC .child {
+	border-color:#000000;
+	color:#000000;
+}
+
+#ENC .fullBox {
+	background:#000000;
+}
+
+/*You can look now*/
+
+.miniButton {
+	line-height:1em;
+	clear:left;
+	margin-bottom:.25em;
+}
+
+.miniButton div {
+	margin-left:.25em;
+	padding:.1em;
+}
+
+.miniButton div a {
+	font-size:1em;
+}
+
+
 
 
 
