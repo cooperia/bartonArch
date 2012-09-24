@@ -1,30 +1,51 @@
 $(function() {
 	//Hover Animations
 	
-	$(".resourceButton").mouseover(function(){
-		$(this).addClass("blackLeft").removeClass("tanLeft");
+	$('.resourceButton').mouseover(function(){
+		$(this).addClass('blackLeft').removeClass('tanLeft');
 	}).mouseout(function(){
-		$(this).addClass("tanLeft").removeClass("blackLeft");
+		$(this).addClass('tanLeft').removeClass('blackLeft');
 	});
 	
-	$(".upLink").mouseover(function(){
-		$(this).addClass("whiteText").removeClass("tanText");
+	$('.upLink').mouseover(function(){
+		$(this).addClass('whiteText').removeClass('tanText');
 	}).mouseout(function(){
-		$(this).addClass("tanText").removeClass("whiteText");
+		$(this).addClass('tanText').removeClass('whiteText');
 	});
 	
-	$(".downLink").mouseover(function(){
-		$(this).addClass("whiteText").removeClass("blackText");
+	$('.downLink').mouseover(function(){
+		$(this).addClass('whiteText').removeClass('blackText');
 	}).mouseout(function(){
-		$(this).removeClass("whiteText").addClass("blackText");
+		$(this).removeClass('whiteText').addClass('blackText');
 	});
 	
-	$(".rightNavBtn").mouseover(function(){
-		$(this).addClass("hover");
-		$('div.child', this).removeClass("hidden");
+	$('.rightNavBox').mouseover(function(){
+		$('.rightNavBtn', this).addClass('hover');
+		$('.child', this).removeClass('hidden');
 	}).mouseout(function(){
-		$(this).removeClass("hover");
-		$('div.child', this).addClass("hidden");
+		$('.rightNavBtn', this).removeClass('hover');
+		if(!$('.child', this).hasClass('selected')){
+			$('.child', this).addClass('hidden');
+		}
+	});
+	
+	//Click Animations
+	
+	$('.rightNavBox').click(function(){
+		if($('.selected').length){
+			$('.selected.child').addClass('hidden');
+			$('.selected .miniWrapper').slideUp('normal', function(){
+				$(this).addClass('hidden');
+			});
+			$('.selected').removeClass('selected');
+			
+		}
+		$(this).addClass('selected');
+		$('.rightNavBtn', this).addClass('selected');
+		$('.child', this).addClass('selected');
+		$('.miniWrapper', this).slideDown('normal', function(){
+			$(this).removeClass('hidden');
+		});
 	});
 
 

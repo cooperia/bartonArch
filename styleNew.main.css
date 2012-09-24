@@ -278,7 +278,7 @@ li.black a {
 	margin-bottom:.25em;
 }
 
-.rightNavBtn.hover, .miniButton {
+.rightNavBtn.hover, .rightNavBtn.selected, .miniButton {
 	border-left:1em solid #000000;
 }
 
@@ -300,16 +300,16 @@ div.hidden {
 
 /*This is ugly... Avert your gaze*/
 
-#imgLLC, #LLC, #LLC .child{
+#imgLLC, #LLC div.rightNavBtn, #LLC .child, #LLC .miniButton{
 	border-color:#9d0000;
 	color:#9d0000;
 }
 
-#imgLLC .fullBox{
+#LLC .fullBox{
 	background:#9d0000;
 }
 
-#MUNE, #imgMUNE, #MUNE .child {
+#MUNE div.rightNavBtn, #imgMUNE, #MUNE .child, #MUNE .miniButton {
 	border-color:#35333e;
 	color:#35333e;
 }
@@ -317,7 +317,7 @@ div.hidden {
 	background:#35333e;
 }
 
-#KIN, #imgKIN, #KIN .child {
+#KIN div.rightNavBtn, #imgKIN, #KIN .child, #KIN .miniButton {
 	border-color:#565d55;
 	color:#565d55;
 }
@@ -325,7 +325,7 @@ div.hidden {
 	background:#565d55;
 }
 
-#HAUS, #imgHAUS, #HAUS .child {
+#HAUS div.rightNavBtn, #imgHAUS, #HAUS .child, #HAUS .miniButton {
 	border-color:#bd812b;
 	color:#bd812b;
 }
@@ -333,7 +333,7 @@ div.hidden {
 	background:#bd812b;
 }
 
-#TERM, #imgTERM, #TERM .child {
+#TERM div.rightNavBtn, #imgTERM, #TERM .child, #TERM .miniButton {
 	border-color:#898989;
 	color:#898989;
 }
@@ -341,7 +341,7 @@ div.hidden {
 	background:#898989;
 }
 
-#WSU, #imgWSU, #WSU .child {
+#WSU div.rightNavBtn, #imgWSU, #WSU .child, #WSU .miniButton {
 	border-color:#452c14;
 	color:#452c14;
 }
@@ -350,7 +350,7 @@ div.hidden {
 	background:#452c14;
 }
 
-#VFS, #imgVFS, #VFS .child {
+#VFS div.rightNavBtn, #imgVFS, #VFS .child, #VFS .miniButton  {
 	border-color:#578cc0;
 	color:#578cc0;
 }
@@ -377,7 +377,7 @@ div.hidden {
 	background:#000000;
 }
 
-/*You can look now*/
+/*You can look again...*/
 
 .miniButton {
 	line-height:1em;
