@@ -10,7 +10,7 @@ function checkAnchor(){
 		currentAnchor = document.location.hash;
 		//if there is not anchor, the loads the default section
 		if(!currentAnchor)
-			query = "section=home";
+			query = "section=bio";
 		else
 		{
 			//Creates the  string callback. This converts the url URL/#main&id=2 in URL/?section=main&id=2
@@ -23,8 +23,21 @@ function checkAnchor(){
 			var query = "section=" + section + params;
 		}
 		//Send the petition
-		$.get("callbacks.php",query, function(data){
-			$("#content").html(data);
+		$.get("content.php", query, function(data){
+			$('#contentWrapper').fadeOut(300, function(){
+				$("#contentWrapper").html(data);
+				if(section == 'bio' || section == 'philo' || query == "section=bio"){
+					$('#contentWrapper').fadeIn(300);
+				}
+				else{
+					$("#contentWrapper img").bind('load', function(){
+						$('#contentWrapper').fadeIn(300);
+					});	
+				}
+				
+			});
+			
+			
 		});
 	}
 }

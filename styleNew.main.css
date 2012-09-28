@@ -63,6 +63,7 @@ p {
 
 #wrapper {
 	width:100%;
+	font-size:1em;
 	padding:1em;
 }
 
@@ -155,10 +156,10 @@ div#navBar {
 
 #projItem {
 	width:19%;
-	height:100%;
 	border-left:1em solid #A29B85;
 	margin-left:.25em;
-	vertical-align:middle;
+	overflow:hidden;
+	padding-left:.25%;
 }
 /*
 #projWrapper {
@@ -166,14 +167,20 @@ div#navBar {
 	margin-left:.25em;
 }
 */
-#projWrapper ul li {
-	float:left;
-	margin-left:1.25%;
-	width:10%;
+#projItem p {
+	text-align:justify;
+	text-align-last: justify;
+	width:100%;
 	font-size:1.8em;
 	font-weight:bold;
-	line-height:1em;
-	margin-top:.2em;
+	margin-top:.3em;
+	
+}
+
+#projItem p:after {
+content: "";
+display: inline-block;
+width: 100%;
 }
 
 #projWrapper ul li.imgBar {
@@ -193,6 +200,8 @@ div#navBar {
 }
 #navWrapper ul {
 	margin-left:.25em;
+	height:2.1em;
+	overflow:hidden;
 }
 
 #navWrapper ul li {
@@ -204,15 +213,17 @@ div#navBar {
 	font-size:1.2em;
 }
 
+a {
+	text-decoration:none;
+}
+
 a.leftLink {
 	margin-left:1em;
-	text-decoration:none;
 }
 
 a.rightLink {
 	margin-right:1em;
 	float:right;
-	text-decoration:none;
 }
 
 li.black a {
@@ -226,6 +237,7 @@ li.black a {
 	max-width:98em;
 	min-width:62em;
 	margin:1em auto;
+	padding-left:1.25em;
 }
 
 #contentWrapper {
@@ -244,9 +256,13 @@ li.black a {
 	margin-top:1em;
 }
 
-#textWrap {
+.textWrap {
 	float:left;
 	width:50%;
+}
+
+.contentFull {
+	width:100%;
 }
 
 
@@ -254,7 +270,7 @@ li.black a {
 
 #resourceWrapper {
 	clear:both;
-	max-width:96em;
+	max-width:98em;
 	min-width:60em;
 	margin: 0 auto;
 }
@@ -267,6 +283,10 @@ li.black a {
 
 .resourceButton div {
 	margin-left:.25em;
+}
+
+#resourceWrapper p {
+	margin:0em 0em 0em 1em;
 }
 
 
@@ -285,9 +305,25 @@ li.black a {
 .navImage, .child {
 	border:.1em solid #000000;
 	float:right;
-	margin-right:.25em;
+	margin-right:.2em;
 	width:5.5em;
 	line-height:1em;
+}
+
+.child {
+	font-size:1em;
+	height:5.8em;
+	text-align:center;
+	display:table;
+}
+
+
+.child p {
+	margin:0em;
+	font-size:.9em;
+	
+	display:table-cell;
+	vertical-align:middle;
 }
 
 div.fullBox {
@@ -300,7 +336,7 @@ div.hidden {
 
 /*This is ugly... Avert your gaze*/
 
-#imgLLC, #LLC div.rightNavBtn, #LLC .child, #LLC .miniButton{
+#imgLLC, #LLC div.rightNavBtn, #LLC .child, #LLC .unselected{
 	border-color:#9d0000;
 	color:#9d0000;
 }
@@ -309,7 +345,7 @@ div.hidden {
 	background:#9d0000;
 }
 
-#MUNE div.rightNavBtn, #imgMUNE, #MUNE .child, #MUNE .miniButton {
+#MUNE div.rightNavBtn, #imgMUNE, #MUNE .child, #MUNE .unselected {
 	border-color:#35333e;
 	color:#35333e;
 }
@@ -317,40 +353,40 @@ div.hidden {
 	background:#35333e;
 }
 
-#KIN div.rightNavBtn, #imgKIN, #KIN .child, #KIN .miniButton {
-	border-color:#565d55;
-	color:#565d55;
+#KIN div.rightNavBtn, #imgKIN, #KIN .child, #KIN .unselected {
+	border-color:#616161;
+	color:#616161;
 }
 #KIN .fullBox {
-	background:#565d55;
+	background:#616161;
 }
 
-#HAUS div.rightNavBtn, #imgHAUS, #HAUS .child, #HAUS .miniButton {
-	border-color:#bd812b;
-	color:#bd812b;
+#HAUS div.rightNavBtn, #imgHAUS, #HAUS .child, #HAUS .unselected {
+	border-color:#1e7c03;
+	color:#1e7c03;
 }
 #HAUS .fullBox {
-	background:#bd812b;
+	background:#1e7c03;
 }
 
-#TERM div.rightNavBtn, #imgTERM, #TERM .child, #TERM .miniButton {
-	border-color:#898989;
-	color:#898989;
+#TERM div.rightNavBtn, #imgTERM, #TERM .child, #TERM .unselected {
+	border-color:#ffae1f;
+	color:#ffae1f;
 }
 #TERM .fullBox {
-	background:#898989;
+	background:#ffae1f;
 }
 
-#WSU div.rightNavBtn, #imgWSU, #WSU .child, #WSU .miniButton {
-	border-color:#452c14;
-	color:#452c14;
+#WSU div.rightNavBtn, #imgWSU, #WSU .child, #WSU .unselected {
+	border-color:#5e20a0;
+	color:#5e20a0;
 }
 
 #WSU .fullBox {
-	background:#452c14;
+	background:#5e20a0;
 }
 
-#VFS div.rightNavBtn, #imgVFS, #VFS .child, #VFS .miniButton  {
+#VFS div.rightNavBtn, #imgVFS, #VFS .child, #VFS .unselected  {
 	border-color:#578cc0;
 	color:#578cc0;
 }
@@ -359,13 +395,13 @@ div.hidden {
 	background:#578cc0;
 }
 
-#PCI div.rightNavBtn, #imgPCI, #PCI .child, #PCI .miniButton {
-	border-color:#a8b9b9;
-	color:#a8b9b9;
+#PCI div.rightNavBtn, #imgPCI, #PCI .child, #PCI .unselected {
+	border-color:#9fb1b1;
+	color:#9fb1b1;
 }
 
 #PCI .fullBox {
-	background:#a8b9b9;
+	background:#9fb1b1;
 }
 
 #ENC, #imgENC, #ENC .child {
@@ -390,11 +426,14 @@ div.hidden {
 	padding:.1em;
 }
 
-.miniButton div a {
+.miniButton p {
 	font-size:1em;
+	margin:0em 0em 0em 1em;
 }
 
-
+div.mSelected {
+	border-color:#000000;
+}
 
 
 
