@@ -242,9 +242,9 @@ li.black a {
 
 #contentWrapper {
 	float:left;
-	width:78%;
+	width:100%;
 	line-height:1em;
-	margin:1em 0em 1em;
+	margin:1em 20em 1em 0em;
 	font-family:helvetica, arial, sans-serif;
 	font-size:1.2em;
 	line-height:1.5em;
@@ -252,7 +252,7 @@ li.black a {
 
 #rightNav {
 	float:right;
-	width:20.3%;
+	width:20em;
 	margin-top:1em;
 }
 
@@ -435,7 +435,15 @@ div.mSelected {
 	border-color:#000000;
 }
 
-
+#loading {
+	background:#A29B85;
+	font-size:2em;
+	font-weight:bold;
+	color:#000000;
+	padding:.5em;
+	width:25%;
+	float:left;
+}
 
 
 

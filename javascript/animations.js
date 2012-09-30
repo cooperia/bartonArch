@@ -36,8 +36,13 @@ $(function() {
 	$('.rightNavBox').click(function(){
 		if($('.selected').length && !$(this).hasClass('selected') ){
 			selectedKiller('selected');
+			selectedKiller('mSelected');
 		}
-		$(this).addClass('selected');
+		if(!$(this).hasClass('selected') ){
+			$('div:nth-child(1)', this).addClass('mSelected').removeClass('unselected');
+		}
+		
+		$(this).addClass('selected');	
 		$('.rightNavBtn', this).addClass('selected');
 		$('.child', this).addClass('selected');
 		$('.miniWrapper', this).slideDown('normal', function(){
@@ -56,7 +61,7 @@ $(function() {
 	
 	$('.miniButton').click(function(){
 		if($('.mSelected').length && !$(this).hasClass('mSelected') ){
-			selectedKiller('mSelected')
+			selectedKiller('mSelected');
 		}
 		$(this).addClass('mSelected').removeClass('unselected');
 	});
