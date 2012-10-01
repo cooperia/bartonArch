@@ -17,12 +17,14 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	z-index:0;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1em;
 	font-size: 62.5%;
@@ -64,7 +66,7 @@ p {
 #wrapper {
 	width:100%;
 	font-size:1em;
-	padding:1em;
+	padding:1em 0em;
 }
 
 .clear {
@@ -123,6 +125,7 @@ div#headWrapper {
 	margin:0em auto 1em auto;
 	width:98em;
 	vertical-align:baseline;
+	font-size:1em;
 }
 
 h1#name {
@@ -149,17 +152,21 @@ div#navBar {
 
 
 .header {
-	width:40%;
+	width:50%;
 	height:100%;
 	padding: .5em 0em;
 }
 
 #projItem {
-	width:19%;
+	width:18.75em;
 	border-left:1em solid #A29B85;
-	margin-left:.25em;
+	padding-left:.25em;
 	overflow:hidden;
-	padding-left:.25%;
+	position:absolute;
+	right:.25em;
+	top:0em;
+	height:2.1em;
+	z-index:1;
 }
 /*
 #projWrapper {
@@ -199,9 +206,17 @@ width: 100%;
 	border-right:1em solid #A29B85;
 }
 #navWrapper ul {
-	margin-left:.25em;
 	height:2.1em;
+	
+}
+
+#leftHead {
+	padding-left:.25em;
+	width:100%;
+	padding-right:19.25em;
 	overflow:hidden;
+	float:right;
+	
 }
 
 #navWrapper ul li {
@@ -236,24 +251,25 @@ li.black a {
 #bodyWrapper {
 	max-width:98em;
 	min-width:62em;
+	min-height:60em;
 	margin:1em auto;
 	padding-left:1.25em;
 }
 
 #contentWrapper {
-	float:left;
+	float:right;
 	width:100%;
+	padding-right:19.25em;
 	line-height:1em;
-	margin:1em 20em 1em 0em;
 	font-family:helvetica, arial, sans-serif;
 	font-size:1.2em;
 	line-height:1.5em;
 }
 
 #rightNav {
-	float:right;
-	width:20em;
-	margin-top:1em;
+	position:absolute;
+	top:0;
+	right:0;
 }
 
 .textWrap {
@@ -305,14 +321,15 @@ li.black a {
 .navImage, .child {
 	border:.1em solid #000000;
 	float:right;
+	width:5.7em;
 	margin-right:.2em;
-	width:5.5em;
 	line-height:1em;
 }
 
 .child {
 	font-size:1em;
 	height:5.8em;
+	
 	text-align:center;
 	display:table;
 }
@@ -445,9 +462,28 @@ div.mSelected {
 	float:left;
 }
 
+/*Media Queries*/
 
-
-
+@media screen and (max-width: 48em) {
+   .tan a {
+		font-size:.9em;
+	}
+	
+	.tan a.leftLink {
+		margin-left:.3em;
+	}
+	.tan a.rightLink {
+		margin-right: .3em;
+	}
+	
+	h1#name {
+		font-size:2.0em;
+	}
+	
+	h2#subtitles{
+		font-size:1.4em;
+	}
+}
 
 
 
