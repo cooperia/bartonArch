@@ -20,6 +20,9 @@ switch($_GET['section']){
 		<p>A building's character should be easily recognizable and at the same time restrained through simplicity and clarity of organization. Good building design should allow artistic complexity, but the place must still be comprehendible by its inhabitants.</p>
 		
 		<p>We are in an age where sustainability on many fronts is very important. The longevity of a building is determined by its ability to continuously intrigue its users, provide positive social environments, perform its programmatic functions, and care for the environment. </p>
+		<br/>
+		<br/>
+		<figure><img  id="philoImage" src="images/philoimage.jpg" ></figure>
 	</div>
 	<?
 	//PCI

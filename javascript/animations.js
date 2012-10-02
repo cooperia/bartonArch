@@ -31,6 +31,16 @@ $(function() {
 		}
 	});
 	
+	$('.miniButton').mouseover(function(){
+		$(this).addClass('hover').removeClass('unselected');
+		
+	}).mouseout(function(){
+		$(this).removeClass('hover');
+		if(!$(this).hasClass('mSelected')){
+			$(this).addClass('unselected');
+		}
+	});
+	
 	//Click Animations
 	
 	$('.rightNavBox').click(function(){
