@@ -247,7 +247,7 @@ li.black a {
 	max-width:98em;
 	min-width:62em;
 	min-height:53.6em;
-	margin:1em auto;
+	margin:1em auto 4em auto;
 	padding-left:1.25em;
 }
 
@@ -439,7 +439,7 @@ div.hidden {
 	background:#000000;
 }
 
-/*You can look again...*/
+/*You can look again... aaaand buttons*/
 
 .miniButton {
 	line-height:1em;
@@ -461,6 +461,8 @@ div.mSelected {
 	border-color:#000000;
 }
 
+/*Misc*/
+
 #loading {
 	background:#A29B85;
 	font-size:2em;
@@ -469,6 +471,12 @@ div.mSelected {
 	padding:.5em;
 	width:25%;
 	float:left;
+}
+
+#philoImage {
+	position:absolute;
+	bottom:0em;
+	left:0em;
 }
 
 /*Media Queries*/
@@ -496,14 +504,61 @@ div.mSelected {
 	.textWrap {
 		width:100%;
 	}
+	
+	#footer p {
+		font-size:.7em;
+		margin-top:1em;
+	}
 }
 
-#philoImage {
-	position:absolute;
-	bottom:0em;
-	left:0em;
+/*Footer*/
+
+div#footer {
+	max-width:98em;
+	min-width:60em;
+	height:2.1em;
+	
+	border-left:1em solid #A29B85;
+	border-right:1em solid #A29B85;
+	padding:0em .25em;
+	margin:1em auto 0em auto;
 }
 
+#footer p {
+	font-weight:bold;
+	margin:0em;
+	margin-top:.7em;
+}
+
+#footerLeft {
+	float:left;
+	width:55%;
+	background:#A29B85;
+}
+
+#footer div {
+	height:2.1em;
+}
+
+#ianCooper {
+	background:#A29B85;
+	float:right;
+	width:45%;
+	padding-right:1em;
+}
+
+#ianCooper p {
+	text-align:right;
+}
+
+#bartLeft{
+	padding-left:1em;
+	float:left;
+}
+
+#design {
+	float:right;
+}
 
 
 

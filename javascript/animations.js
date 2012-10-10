@@ -1,10 +1,11 @@
 $(function() {
-	//Hover Animations
 	
-	$('.resourceButton').mouseover(function(){
-		$(this).addClass('blackLeft').removeClass('tanLeft');
+	//Hover Animations
+	//Resource hovers
+	$('.resourceButton div.tan').mouseover(function(){
+		$(this).parent().parent().addClass('blackLeft').removeClass('tanLeft');
 	}).mouseout(function(){
-		$(this).addClass('tanLeft').removeClass('blackLeft');
+		$(this).parent().parent().addClass('tanLeft').removeClass('blackLeft');
 	});
 	
 	$('.upLink').mouseover(function(){
@@ -15,12 +16,21 @@ $(function() {
 		}
 	});
 	
+	//Header hovers
 	$('.downLink').mouseover(function(){
 		$(this).addClass('whiteText').removeClass('blackText');
 	}).mouseout(function(){
 		$(this).removeClass('whiteText').addClass('blackText');
 	});
 	
+	//Footer hovers
+	$('#ianCooper p').mouseover(function(){
+		$(this).addClass('whiteText').removeClass('blackText');
+	}).mouseout(function(){
+		$(this).removeClass('whiteText').addClass('blackText');
+	});
+	
+	//Nav Box Hover Popup
 	$('.rightNavBox').mouseover(function(){
 		$('.rightNavBtn', this).addClass('hover');
 		$('.child', this).removeClass('hidden');
@@ -31,6 +41,7 @@ $(function() {
 		}
 	});
 	
+	//Minibutton Hover Black
 	$('.miniButton').mouseover(function(){
 		$(this).addClass('hover').removeClass('unselected');
 		
@@ -42,7 +53,7 @@ $(function() {
 	});
 	
 	//Click Animations
-	
+	//Right Nav Click lock popup
 	$('.rightNavBox').click(function(){
 		if($('.selected').length && !$(this).hasClass('selected') ){
 			selectedKiller('selected');
@@ -60,6 +71,7 @@ $(function() {
 		});
 	});
 	
+	//Header lock white on click
 	$('.header a.tanText').click(function(){
 		if($('.selected').length && !$(this).hasClass('selected') ){
 			selectedKiller('selected');
@@ -68,7 +80,7 @@ $(function() {
 		
 	});
 	
-	
+	//Minibutton lock black on click
 	$('.miniButton').click(function(){
 		if($('.mSelected').length && !$(this).hasClass('mSelected') ){
 			selectedKiller('mSelected');
@@ -76,6 +88,8 @@ $(function() {
 		$(this).addClass('mSelected').removeClass('unselected');
 	});
 
+
+	//Does what it says. Kills Selected stuff so that you can assign a new selected item.
 	function selectedKiller (bin){
 		if(bin == 'selected'){
 			if($('.selected').hasClass('upLink')){

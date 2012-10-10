@@ -1,4 +1,5 @@
-﻿<?php
+﻿<!--These should be fairly self explanatory-->
+<?php
 switch($_GET['section']){
 	case 'bio':
 	?>
